@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <title>{{angryBirdsList.name}}</title>
+</head>
+<body>
+    <div style="
+    display: flex;
+    flex-direction:
+    column;height: 100%;
+    align-items: center;">
+    <div style="
+    border: 1px solid lightblue;
+    width: 500px;
+    height: 500px;
+    background-color:lightcoral;
+    align-self: center;
+    text-align: center;
+    color:white">
+    <h1>{{angryBirdsList.name}}</h1>
+    <p>Abilities: {{angryBirdsList.abilities}}</p>
+    <p>Group: {{angryBirdsList.group}}</p>
+    <p>Species: {{angryBirdsList.species}}</p>
+    <p>Feels: {{angryBirdsList.feels}}</p>
+    <img src="{{angryBirdsList.image}}"  height="200px" width="200px">
+    </div>
+    <br>
+    <a href="/angry_birds">Back</a>
+    <br>
+    <a href="/">Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <title>Angry Birds</title>
+</head>
+<body>
+    <div style="
+        display: flex;
+        flex-direction:
+        column;height: 100%;
+        align-items: center;">
+            {{#angryBirdsList}}
+        <div style="
+        border: 1px solid lightblue;
+        width: 500px;
+        height: 400px;
+        background-color:lightcoral;
+        align-self: center;
+        text-align: center;
+        color:white">
+            <h1>{{name}}</h1>
+            <img src="{{image}}" alt="" height="200px" width="200px">
+            <br>
+            <br>
+            <a href="/angry_birds/{{id}}">{{name}}</a>
+        </div>
+        {{/angryBirdsList}} 
+            <br>
+            <a href="/">Home</a>
+    </div>
+</body>
+</html>
